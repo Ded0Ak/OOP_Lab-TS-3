@@ -6,7 +6,7 @@ import { CustomSerializer } from './serializers/CustomSerializer';
 
 export class Part1Demo {
     static run(): void {
-        console.log('=== Part 1: Serialization Mechanism Investigation ===\n');
+        console.log('Part 1: Serialization Mechanism Investigation\n');
 
         const stringEntities: StringEntity[] = [
             new StringEntity("Hello World"),
@@ -17,7 +17,7 @@ export class Part1Demo {
 
         console.log('1. Created array of StringEntity objects:');
         stringEntities.forEach((entity, index) => {
-            console.log(`   ${index + 1}. ${entity.display()}`);
+            console.log(`${index + 1}. ${entity.display()}`);
         });
 
         console.log('\n2. Methods demonstration:');

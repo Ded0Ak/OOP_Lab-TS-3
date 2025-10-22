@@ -22,7 +22,6 @@ export class XmlSerializer {
         const xmlContent = fs.readFileSync(filename, 'utf8');
         const entities: StringEntity[] = [];
         
-        // Простий парсер XML для демонстрації
         const valueMatches = xmlContent.match(/<value><!\[CDATA\[(.*?)\]\]><\/value>/g);
         
         if (valueMatches) {
