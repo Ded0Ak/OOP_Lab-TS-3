@@ -4,7 +4,6 @@ import * as fs from 'fs';
 class Program {
     static async main(): Promise<void> {
         try {
-            // Create directory for files
             if (!fs.existsSync('data')) {
                 fs.mkdirSync('data');
             }
@@ -18,7 +17,6 @@ class Program {
     }
 }
 
-// Run the program
 if (require.main === module) {
     Program.main().catch(console.error);
 }
